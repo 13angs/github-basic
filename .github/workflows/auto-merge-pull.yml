@@ -1,7 +1,9 @@
 name: auto-merge-pull
+
 on:
-  pull_request:
-    - main
+  push:
+    branches:
+      - main
 jobs:
   auto-merge-pull:
     name: Auto merge latest update
